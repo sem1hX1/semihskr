@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-t="630">
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Semih Şeker kişisel portföy sitesi">
-    <title>Semih Şeker | Kişisel Portföy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Semih Şeker - Bilgisayar Teknikeri | Web Geliştirme, Robotik Kodlama ve Siber Güvenlik">
-    <meta property="og:image" content="">
-
-    <!-- Font Awesome -->
+    <title>Semih Şeker | Kişisel Portföy</title>
+    
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Typed.js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- CSS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="index.css">
-
-    <!-- JS -->
-    <script src="index.js" defer></script>
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <header>
     <nav>
         <div class="navbar">
             <div class="navLogo">Semih Şeker</div>
-
             <div class="hamburger" id="hamburger" aria-label="Menüyü Aç">
                 <i class="fa-solid fa-bars"></i>
             </div>
-
             <div class="navlink" id="nav-menu">
                 <ul>
                     <li><a href="#AnaSayfa">Ana Sayfa</a></li>
@@ -48,7 +33,6 @@ t="630">
     </nav>
 </header>
 
-<!-- ================= HERO ================= -->
 <section id="AnaSayfa">
     <div class="middle-left-area" data-aos="fade-right">
         <h1 class="main-name">Semih Şeker</h1>
@@ -56,7 +40,6 @@ t="630">
             <span id="typed-text"></span>
         </div>
     </div>
-
     <div class="resimkapsayici" data-aos="fade-left">
         <div class="resim">
             <img src="imgs/semihskrpp.jpg" alt="Semih Şeker Profil Fotoğrafı">
@@ -64,7 +47,6 @@ t="630">
     </div>
 </section>
 
-<!-- ================= HAKKIMDA ================= -->
 <section class="HakkımdaKapsayıcı" id="hakkimda" data-aos="zoom-in">
     <div class="Hakkımdaİçerik">
         <h2 class="HakkımdaBaşlık">Hakkımda</h2>
@@ -76,82 +58,52 @@ t="630">
     </div>
 </section>
 
-<!-- ================= PROJELER ================= -->
 <section class="kartkapsayıcı" id="projeler">
-
     <div class="kart" data-aos="fade-up" data-aos-delay="100">
-        <div class="kartimg">
-            <img src="imgs/2doyun.png" alt="Proje 1">
-        </div>
+        <div class="kartimg"><img src="imgs/2doyun.png" alt="Proje 1"></div>
         <div class="kartBaşlık">2D Oyun</div>
-        <div class="kartyazı">
-            <p>Magical Exile, Karabük Üniversitesi Yapay Zeka Kulübü tarafından düzenlenen Power Up Game Jam etkinliğinde, 48 saat içinde geliştirdiğimiz bir platform/aksiyon oyunudur.</p>
-        </div>
-        <div class="kartbutton">
-            <a href="https://github.com/sem1hX1/power-up-game-jam-magical-exile" target="_blank">GitHub</a>
-        </div>
+        <div class="kartyazı"><p>Magical Exile, Power Up Game Jam etkinliğinde 48 saatte geliştirdiğimiz bir platform oyunudur.</p></div>
+        <div class="kartbutton"><a href="https://github.com/sem1hX1/power-up-game-jam-magical-exile" target="_blank">GitHub</a></div>
     </div>
 
     <div class="kart" data-aos="fade-up" data-aos-delay="200">
-        <div class="kartimg">
-            <img src="imgs/jamer.jpeg" alt="Proje 2">
-        </div>
+        <div class="kartimg"><img src="imgs/jamer.jpeg" alt="Proje 2"></div>
         <div class="kartBaşlık">2.4 Ghz Jammer</div>
-        <div class="kartyazı">
-    <p>ESP32 tabanlı bu pentest projesi, 2.4 GHz frekans bandında çalışan Bluetooth, IoT ve Wi-Fi cihazlarının sinyal gücü testlerini gerçekleştirmek amacıyla geliştirilmiştir.</p>
-        </div>
-        <div class="kartbutton">
-            <a href="https://github.com/sem1hX1/ESP32-2.4Ghz-jammer" target="_blank">GitHub</a>
-        </div>
+        <div class="kartyazı"><p>ESP32 tabanlı bu pentest projesi, sinyal gücü testleri gerçekleştirmek amacıyla geliştirilmiştir.</p></div>
+        <div class="kartbutton"><a href="https://github.com/sem1hX1/ESP32-2.4Ghz-jammer" target="_blank">GitHub</a></div>
     </div>
 
     <div class="kart" data-aos="fade-up" data-aos-delay="300">
-        <div class="kartimg">
-            <img src="imgs/akılımetre2.jpeg" alt="Proje 3">
-        </div>
+        <div class="kartimg"><img src="imgs/akılımetre2.jpeg" alt="Proje 3"></div>
         <div class="kartBaşlık">Akıllı Metre</div>
-        <div class="kartyazı">
-        <p>ESP32 kullanılarak geliştirilen bu akıllı metre; lazerle mesafe ölçümü, su terazisi özelliği, ortam sıcaklığı ölçümü ve renk kodu algılama gibi çok amaçlı fonksiyonlara sahiptir.</p>
-        </div>
-        <div class="kartbutton">
-            <a href="https://github.com/sem1hX1/Ak-l-Metre" target="_blank">GitHub</a>
-        </div>
+        <div class="kartyazı"><p>Lazerle mesafe ölçümü, su terazisi ve ortam sıcaklığı ölçümü yapan çok amaçlı bir cihazdır.</p></div>
+        <div class="kartbutton"><a href="https://github.com/sem1hX1/Ak-l-Metre" target="_blank">GitHub</a></div>
     </div>
 
-    <div class="kart" data-aos="fade-up" data-aos-delay="300">
-        <div class="kartimg">
-            <img src="imgs/araçkiralama.png" alt="Proje 3">
-        </div>
+    <div class="kart" data-aos="fade-up" data-aos-delay="400">
+        <div class="kartimg"><img src="imgs/araçkiralama.png" alt="Proje 4"></div>
         <div class="kartBaşlık">Araç Kiralama Sistemi</div>
-        <div class="kartyazı">
-        <p>C# Windows Forms kullanılarak geliştirilen bu proje, araç kiralama firmalarının rezervasyon ve araç yönetim süreçlerini dijital ortama taşır. Sistem; rezervasyon takibi ve dinamik fiyatlandırma gibi temel işlevler sunar.</p>
-
-        </div>
-        <div class="kartbutton">
-            <a href="https://github.com/sem1hX1/Akilli-Arac-Kiralama-Rezarvasyon-Sistemi" target="_blank">GitHub</a>
-        </div>
+        <div class="kartyazı"><p>C# Windows Forms ile geliştirilen rezervasyon ve yönetim süreçlerini dijitalleştiren bir projedir.</p></div>
+        <div class="kartbutton"><a href="https://github.com/sem1hX1/Akilli-Arac-Kiralama-Rezarvasyon-Sistemi" target="_blank">GitHub</a></div>
     </div>
-
 </section>
 
-<!-- ================= İLETİŞİM ================= -->
 <footer class="IletisimKapsayıcı" id="iletisim" data-aos="fade-up">
     <div class="Iletisimİçerik">
         <h2 class="HakkımdaBaşlık">İletişim</h2>
+        
+        <form id="contact-form" class="iletisim-form">
+            <input type="text" id="from_name" placeholder="Adınız" required>
+            <input type="email" id="email_id" placeholder="E-posta Adresiniz" required>
+            <textarea id="message" placeholder="Mesajınız" required></textarea>
+            <button type="button" class="gonder-btn" onclick="SendMail()">Mesaj Gönder</button>
+        </form>
 
         <div class="SosyalMedya">
-            <a href="mailto:semihskr42@gmail.com" class="SosyalLink">
-                <i class="fa-solid fa-envelope"></i> E-Posta
-            </a>
-            <a href="https://www.linkedin.com/in/semih-%c5%9feker/" target="_blank" class="SosyalLink">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/sem1hX1" target="_blank" class="SosyalLink">
-                <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <a href="https://www.instagram.com/semih_seker13/" target="_blank" class="SosyalLink">
-                <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
+            <a href="mailto:semihskr42@gmail.com" class="SosyalLink"><i class="fa-solid fa-envelope"></i> E-Posta</a>
+            <a href="https://www.linkedin.com/in/semih-%c5%9feker/" target="_blank" class="SosyalLink"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/sem1hX1" target="_blank" class="SosyalLink"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/semih_seker13/" target="_blank" class="SosyalLink"><i class="fa-brands fa-instagram"></i> Instagram</a>
         </div>
 
         <div class="FooterAlt">
@@ -160,35 +112,72 @@ t="630">
     </div>
 </footer>
 
-<!-- ================= AOS ================= -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
- // Sağ tık menüsünü engeller
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-        alert("Üzgünüz, bu sitede sağ tık kullanımı kapalıdır."); // İstersen bu alert satırını silebilirsin
-    });
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    // Klavye kısayollarını engeller (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
-    document.onkeydown = function(e) {
-        if (e.keyCode == 123) { // F12
-            return false;
+<script>
+    // AOS Başlat
+    AOS.init({ duration: 1000, once: true });
+
+    // EmailJS Başlat
+    (function() {
+        emailjs.init("jalEra6OAriI8xlIe"); 
+    })();
+
+    // Mail Gönderme Fonksiyonu
+    function SendMail() {
+        var fromName = document.getElementById("from_name").value;
+        var emailId = document.getElementById("email_id").value;
+        var msg = document.getElementById("message").value;
+
+        if(!fromName || !emailId || !msg) {
+            alert("Lütfen tüm alanları doldurun.");
+            return;
         }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
-            return false;
-        }
-        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U (Kaynak kodunu görüntüle)
+
+        var params = {
+            from_name: fromName,
+            email_id: emailId,
+            message: msg
+        };
+
+        const serviceID = "service_x6fr84g";
+        const templateID = "template_fyg726e";
+
+        emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("contact-form").reset();
+            alert("Mesajınız başarıyla gönderildi! 🚀");
+        })
+        .catch(err => {
+            console.error("Hata:", err);
+            alert("Bir hata oluştu, lütfen tekrar deneyin.");
+        });
+    }
+
+    // Sağ Tık ve F12 Engelleme
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.onkeydown = e => {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
             return false;
         }
     };
 
+    // Typed.js (Düzeltildi)
+    var typed = new Typed('#typed-text', {
+        strings: ['Bilgisayar Teknikeri', 'Web Geliştirici', 'Robotik Meraklısı', 'Siber Güvenlik Öğrencisi'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+    });
+
+    // Hamburger Menü Mantığı (Eksikti, Eklendi)
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
 </script>
 </body>
 </html>
