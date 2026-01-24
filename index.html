@@ -93,10 +93,11 @@
         <h2 class="HakkımdaBaşlık">İletişim</h2>
         
         <form id="contact-form" class="iletisim-form">
-            <input type="text" id="from_name" placeholder="Adınız" required>
+            <input type="text" id="from_name" placeholder="Adınız Soyadınız" required>
             <input type="email" id="email_id" placeholder="E-posta Adresiniz" required>
             <textarea id="message" placeholder="Mesajınız" required></textarea>
-            <button type="button" class="gonder-btn" onclick="SendMail()">Mesaj Gönder</button>
+	    <div class="g-recaptcha" data-sitekey="6LcGIFUsAAAAAMI83Hy7ozXkOYXlaUwF4VAxMhcK" style="margin-bottom: 15px;"></div>
+	    <button type="button" class="gonder-btn" onclick="SendMail()">Mesaj Gönder</button>
         </form>
 
         <div class="SosyalMedya">
@@ -114,70 +115,6 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<script>
-    // AOS Başlat
-    AOS.init({ duration: 1000, once: true });
-
-    // EmailJS Başlat
-    (function() {
-        emailjs.init("jalEra6OAriI8xlIe"); 
-    })();
-
-    // Mail Gönderme Fonksiyonu
-    function SendMail() {
-        var fromName = document.getElementById("from_name").value;
-        var emailId = document.getElementById("email_id").value;
-        var msg = document.getElementById("message").value;
-
-        if(!fromName || !emailId || !msg) {
-            alert("Lütfen tüm alanları doldurun.");
-            return;
-        }
-
-        var params = {
-            from_name: fromName,
-            email_id: emailId,
-            message: msg
-        };
-
-        const serviceID = "service_x6fr84g";
-        const templateID = "template_fyg726e";
-
-        emailjs.send(serviceID, templateID, params)
-        .then(res => {
-            document.getElementById("contact-form").reset();
-            alert("Mesajınız başarıyla gönderildi! 🚀");
-        })
-        .catch(err => {
-            console.error("Hata:", err);
-            alert("Bir hata oluştu, lütfen tekrar deneyin.");
-        });
-    }
-
-    // Sağ Tık ve F12 Engelleme
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.onkeydown = e => {
-        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
-            return false;
-        }
-    };
-
-    // Typed.js (Düzeltildi)
-    var typed = new Typed('#typed-text', {
-        strings: ['Bilgisayar Teknikeri', 'Web Geliştirici', 'Robotik Meraklısı', 'Siber Güvenlik Öğrencisi'],
-        typeSpeed: 50,
-        backSpeed: 30,
-        loop: true
-    });
-
-    // Hamburger Menü Mantığı (Eksikti, Eklendi)
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-</script>
+<script src="index.js"></script>
 </body>
 </html>
