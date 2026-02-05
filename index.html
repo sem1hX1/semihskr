@@ -93,14 +93,18 @@
     <div class="Iletisimİçerik">
         <h2 class="HakkımdaBaşlık">İletişim</h2>
         
-        <form id="contact-form" class="iletisim-form">
-            <input type="text" id="from_name" placeholder="Adınız Soyadınız" required>
-            <input type="email" id="email_id" placeholder="E-posta Adresiniz" required>
-            <textarea id="message" placeholder="Mesajınız" required></textarea>
-	    <div class="g-recaptcha" data-sitekey="6LcGIFUsAAAAAMI83Hy7ozXkOYXlaUwF4VAxMhcK" style="margin-bottom: 15px;"></div>
-	  <button type="button" id="submit-btn" class="gonder-btn">Mesaj Gönder</button>
-        </form>
-
+<form id="contact-form" class="iletisim-form">
+    <input type="text" id="from_name" name="from_name" placeholder="Adınız Soyadınız" required>
+    <input type="email" id="email_id" name="email_id" placeholder="E-posta Adresiniz" 
+       required 
+       oninvalid="this.setCustomValidity('Lütfen geçerli bir e-posta adresi giriniz.')" 
+       oninput="this.setCustomValidity('')">
+    <textarea id="message" name="message" placeholder="Mesajınız" required></textarea>
+    
+    <div class="g-recaptcha" data-sitekey="6LcGIFUsAAAAAMI83Hy7ozXkOYXlaUwF4VAxMhcK" style="margin-bottom: 15px;"></div>
+    
+    <button type="submit" id="submit-btn" class="gonder-btn">Mesaj Gönder</button>
+</form>
         <div class="SosyalMedya">
             <a href="mailto:semihskr42@gmail.com" class="SosyalLink"><i class="fa-solid fa-envelope"></i> E-Posta</a>
             <a href="https://www.linkedin.com/in/semih-%c5%9feker/" target="_blank" class="SosyalLink"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
