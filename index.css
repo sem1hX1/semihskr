@@ -68,7 +68,7 @@ body {
 }
 
 .navlink ul li a:hover {
-    color: #00ff00;
+    color: #e0e0e0;
 }
 
 .hamburger {
@@ -121,7 +121,7 @@ body {
 }
 
 .resim:hover {
-    border-color: #00ff00;
+    border-color: #888;
     transform: scale(1.05);
 }
 
@@ -175,8 +175,8 @@ body {
 
 .kart:hover {
     transform: translateY(-12px);
-    border-color: #00ff00;
-    box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2);
+    border-color: #555;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .kartimg {
@@ -201,7 +201,7 @@ body {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #00ff00;
+    color: #ffffff;
 }
 
 .kartyazı {
@@ -219,7 +219,7 @@ body {
     width: 140px;
     height: 42px;
     margin: 0 auto;
-    background: linear-gradient(90deg, #00ff00, #008800);
+    background: #fff;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ body {
 
 .kartbutton:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .kartbutton a {
@@ -347,7 +347,7 @@ body {
 }
 
 .navlink ul li a.active {
-    color: #00ff00;
+    color: #ffffff;
     position: relative;
 }
 
@@ -358,7 +358,7 @@ body {
     bottom: -6px;
     width: 100%;
     height: 2px;
-    background: #00ff00;
+    background: #ffffff;
 }
 
 /* İletişim Formu Genel Alanı */
@@ -458,7 +458,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background: linear-gradient(135deg, #00ff00, #008800);
+    background: #ffffff;
     border: none;
     cursor: pointer;
     display: flex;
@@ -466,7 +466,7 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     color: #000;
-    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.45);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
         height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
         border-radius 0.4s ease,
@@ -484,11 +484,11 @@ body {
     height: 36px;
     border-radius: 18px;
     font-size: 0.9rem;
-    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 #chatToggleBtn:hover {
-    box-shadow: 0 6px 28px rgba(0, 255, 0, 0.65);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5);
 }
 
 #chatToggleBtn:not(.open):hover {
@@ -565,12 +565,12 @@ body {
     height: 580px;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(18px);
-    border: 1px solid #00ff0055;
+    border: 1px solid #333;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 12px 50px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
     opacity: 0;
     transform: translateY(20px) scale(0.95);
     pointer-events: none;
@@ -585,8 +585,8 @@ body {
 
 .chat-header {
     padding: 16px 20px;
-    background: linear-gradient(90deg, #002200, #001500);
-    border-bottom: 1px solid #00ff0033;
+    background: #111;
+    border-bottom: 1px solid #2a2a2a;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -597,7 +597,7 @@ body {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #00ff00, #008800);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -614,7 +614,7 @@ body {
 .chat-header-info h4 {
     margin: 0;
     font-size: 0.95rem;
-    color: #00ff00;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -628,8 +628,8 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #00ff00;
-    box-shadow: 0 0 6px #00ff00;
+    background: #aaa;
+    box-shadow: none;
     flex-shrink: 0;
     animation: pulseDot 2s ease-in-out infinite;
 }
@@ -715,8 +715,8 @@ body {
 }
 
 .bot-message .message-bubble {
-    background: rgba(0, 255, 0, 0.08);
-    border: 1px solid #00ff0033;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #2e2e2e;
     color: #e8e8e8;
     border-bottom-left-radius: 4px;
 }
@@ -725,7 +725,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #00ff00, #008800);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -743,8 +743,8 @@ body {
 }
 
 .typing-bubble {
-    background: rgba(0, 255, 0, 0.08);
-    border: 1px solid #00ff0033;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #2e2e2e;
     border-radius: 18px;
     border-bottom-left-radius: 4px;
     padding: 12px 16px;
@@ -757,7 +757,7 @@ body {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #00ff00;
+    background: #aaa;
     display: inline-block;
     animation: typingBounce 1.2s ease-in-out infinite;
 }
@@ -792,7 +792,7 @@ body {
 /* Genişleşmiş (başlangıç) durumu */
 .quick-questions {
     padding: 12px 12px;
-    border-top: 1px solid #00ff0022;
+    border-top: 1px solid #2a2a2a;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -815,8 +815,8 @@ body {
 .quick-btn {
     width: 100%;
     padding: 12px 18px;
-    background: rgba(0, 255, 0, 0.07);
-    border: 1px solid #00ff0044;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #2e2e2e;
     border-radius: 30px;
     color: #ccc;
     font-size: 0.82rem;
@@ -833,8 +833,8 @@ body {
 }
 
 .quick-btn:hover:not(:disabled) {
-    background: rgba(0, 255, 0, 0.16);
-    border-color: #00ff0088;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #555;
     color: #fff;
     transform: scale(1.02);
 }
