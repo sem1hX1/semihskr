@@ -424,6 +424,30 @@ body {
     box-shadow: 0 5px 15px rgba(116, 192, 252, 0.4);
 }
 
+/* Daha Fazla Görüntüle Butonu */
+.daha-fazla-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.daha-fazla-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .iletisim-form {
