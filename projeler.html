@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semih Şeker - Bilgisayar Teknikeri | Projelerim ve Sertifikalarım">
+    <title>Semih Şeker | Projeler & Sertifikalar</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="navLogo">Semih Şeker</div>
+                <div class="hamburger" id="hamburger" aria-label="Menüyü Aç">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="navlink" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html#AnaSayfa">Ana Sayfa</a></li>
+                        <li><a href="index.html#hakkimda">Hakkımda</a></li>
+                        <li><a href="projeler.html" class="active">Projelerim</a></li>
+                        <li><a href="sertifikalar.html">Sertifikalarım</a></li>
+                        <li><a href="index.html#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="display:none;"><span id="typed-text"></span></div>
+
+    <section class="page-header" data-aos="fade-down" style="margin-top: 100px; padding: 50px 20px 20px; text-align: center;">
+        <h1 class="HakkımdaBaşlık" style="font-size: 2.5rem; color: #fff;">Projelerim</h1>
+        <p class="hakımdayazı" style="margin-bottom: 20px;">Geliştirdiğim oyunlar, yazılım sistemleri, pentest araçları ve elektronik projelerin detaylı açıklamalarını burada bulabilirsiniz.</p>
+    </section>
+
+    <section class="kartkapsayıcı" id="projelerd" style="padding-top: 20px;">
+        <!-- 2D Oyun -->
+        <div class="kart-genis" data-aos="fade-up" data-aos-delay="100">
+            <div class="kart-genis-img"><img src="imgs/2doyun.png" alt="Proje 1"></div>
+            <div class="kart-genis-content">
+                <div>
+                    <div class="kart-genis-baslik">Magical Exile - 2D Platform Oyunu</div>
+                    <div class="kart-genis-tech">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">Game Jam</span>
+                    </div>
+                    <div class="kart-genis-yazi">
+                        <p>Power Up Game Jam etkinliğinde 48 saat içerisinde sıfırdan geliştirdiğimiz bir 2D platform oyunudur. Piksel sanat tarzı ile büyü yeteneklerini birleştirerek zorlu engellerin aşılmasına dayanan dinamik bir mekanik kurgulandı.</p>
+                        <p>Ekip çalışması dahilinde seviye tasarımı, oyun içi fizik motoru dinamikleri ve UI/UX tasarımı üzerine çalışmalar gerçekleştirilmiştir.</p>
+                    </div>
+                </div>
+                <div class="kartbutton" style="margin: 0;"><a href="https://github.com/sem1hX1/power-up-game-jam-magical-exile" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+
+        <!-- 2.4 Ghz Jammer -->
+        <div class="kart-genis" data-aos="fade-up" data-aos-delay="200">
+            <div class="kart-genis-img"><img src="imgs/jamer.jpeg" alt="Proje 2"></div>
+            <div class="kart-genis-content">
+                <div>
+                    <div class="kart-genis-baslik">ESP32 2.4 GHz Pentest & Jammer</div>
+                    <div class="kart-genis-tech">
+                        <span class="tech-badge">ESP32</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">Siber Güvenlik</span>
+                    </div>
+                    <div class="kart-genis-yazi">
+                        <p>WiFi ağ güvenliği testleri (pentesting) yapabilmek ve 2.4 GHz frekansında sinyal bozucu/deauth saldırıları simüle etmek üzere ESP32 mikrodenetleyicisi ile geliştirilmiş donanım tabanlı bir araçtır.</p>
+                        <p>Kablolu iletişim protokolleri üzerinden arayüz kontrolü sağlanabilmekte, ağ zafiyet tespiti için etkili bir pratik çözüm sunmaktadır.</p>
+                    </div>
+                </div>
+                <div class="kartbutton" style="margin: 0;"><a href="https://github.com/sem1hX1/ESP32-2.4Ghz-jammer" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+
+        <!-- Akıllı Metre -->
+        <div class="kart-genis" data-aos="fade-up" data-aos-delay="300">
+            <div class="kart-genis-img"><img src="imgs/4.jpeg" alt="Proje 3"></div>
+            <div class="kart-genis-content">
+                <div>
+                    <div class="kart-genis-baslik">Akıllı Metre - Fonksiyonel Ölçüm Cihazı</div>
+                    <div class="kart-genis-tech">
+                        <span class="tech-badge">Arduino</span>
+                        <span class="tech-badge">Sensörler</span>
+                        <span class="tech-badge">Elektronik</span>
+                    </div>
+                    <div class="kart-genis-yazi">
+                        <p>Lazer tabanlı hassas mesafe tespiti yapabilen, dahili jiroskop ile dijital su terazisi olarak çalışabilen ve aynı anda ortam sıcaklığını ölçerek LCD ekranda gösteren çok yönlü bir gömülü sistem projesidir.</p>
+                        <p>Mimari, inşaat veya günlük kullanımlar için pratik ve kompakt bir donanım geliştirmeyi hedefler.</p>
+                    </div>
+                </div>
+                <div class="kartbutton" style="margin: 0;"><a href="https://github.com/sem1hX1/Ak-l-Metre" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+
+        <!-- Araç Kiralama Sistemi -->
+        <div class="kart-genis" data-aos="fade-up" data-aos-delay="400">
+            <div class="kart-genis-img"><img src="imgs/araçkiralama.png" alt="Proje 4"></div>
+            <div class="kart-genis-content">
+                <div>
+                    <div class="kart-genis-baslik">Akıllı Araç Kiralama & Yönetim Sistemi</div>
+                    <div class="kart-genis-tech">
+                        <span class="tech-badge">C# Windows Forms</span>
+                        <span class="tech-badge">SQL Server</span>
+                        <span class="tech-badge">Masaüstü Uyg.</span>
+                    </div>
+                    <div class="kart-genis-yazi">
+                        <p>Rent a car şirketlerinin tüm rezervasyon, araç takip, müşteri veri yönetimi ve faturalandırma işlemlerini dijital ortamda kontrol etmelerini sağlayan kapsamlı bir otomasyon sistemidir.</p>
+                        <p>Masaüstü (desktop) tabanlı bu mimari, veritabanı entegrasyonu ve raporlama mekanizmaları ile hızlı ve güvenilir bir yönetim deneyimi sunar.</p>
+                    </div>
+                </div>
+                <div class="kartbutton" style="margin: 0;"><a href="https://github.com/sem1hX1/Akilli-Arac-Kiralama-Rezarvasyon-Sistemi" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="IletisimKapsayıcı">
+        <div class="Iletisimİçerik">
+            <div class="SosyalMedya" style="margin-top: 20px;">
+                <a href="mailto:semihskr42@gmail.com" class="SosyalLink"><i class="fa-solid fa-envelope"></i> E-Posta</a>
+                <a href="https://www.linkedin.com/in/semih-%c5%9feker/" target="_blank" class="SosyalLink"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/sem1hX1" target="_blank" class="SosyalLink"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/semih_seker13/" target="_blank" class="SosyalLink"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+
+            <div class="FooterAlt" style="margin-top: 30px; font-size: 0.9rem; color: #777;">
+                <p>&copy; 2026 Semih Şeker. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatWidget">
+        <div id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="chat-header-info">
+                    <h4>Semih'in Asistanı</h4>
+                    <p>SEMO</p>
+                </div>
+                <div class="chat-header-dot"></div>
+            </div>
+
+            <div id="chatMessages">
+                <div id="typingIndicator">
+                    <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div class="typing-bubble">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-questions" id="quickQuestions">
+                <p class="quick-questions-label">Bir soru seçin:</p>
+                <button class="quick-btn" data-question="Semih kimdir?">👤 Semih kimdir?</button>
+                <button class="quick-btn" data-question="Eğitim bilgileri nelerdir?">🎓 Eğitim bilgileri nelerdir?</button>
+                <button class="quick-btn" data-question="İletişim bilgileri nelerdir?">📬 İletişim bilgileri nelerdir?</button>
+                <button class="quick-btn" data-question="Projeleri nelerdir?">🚀 Projeleri nelerdir?</button>
+                <button class="quick-btn" data-question="Hangi teknolojileri kullanıyor?">💻 Hangi teknolojileri kullanıyor?</button>
+            </div>
+        </div>
+
+        <button id="chatToggleBtn" aria-label="Sohbeti Aç">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="btn-label">Kapat</span>
+        </button>
+        <span class="chat-badge">1</span>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
