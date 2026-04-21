@@ -6,9 +6,9 @@
 }
 
 body {
-    background: linear-gradient(270deg, #000000, #1a1a1a, #000000, #333333);
-    background-size: 400% 400%;
-    animation: WhitePulse 20s ease-in-out infinite;
+    background: linear-gradient(270deg, #030303, #1c1c1c, #080808, #3b3b3b, #0a0a0a, #858585, #000000);
+    background-size: 600% 600%;
+    animation: WhitePulse 22s ease-in-out infinite;
     min-height: 100vh;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
